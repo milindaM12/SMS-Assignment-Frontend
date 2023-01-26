@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>SMS-Assignment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="js/jquery-3.6.3.min.js"></script>
-<script src="js/student.js "></script>
+<script src="js/student.js"></script>
 <body>
-<div class="container mt-5 col-6">
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Student ID</label>
-        <input type="text" disabled class="form-control" id="exampleFormControlInput1" placeholder="Student ID">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput2" class="form-label">Student Name</label>
-        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Student Name">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput3" class="form-label">Student Address</label>
-        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Student Address">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput4" class="form-label">Student Mobile Number</label>
-        <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Student Number">
-    </div>
+    <div class="container mt-5 col-6">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Student ID</label>
+            <input type="text" disabled class="form-control" id="exampleFormControlInput1" placeholder="Student ID">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Student Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Student Name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Student Address</label>
+            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Student Address">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput4" class="form-label">Student Mobile Number</label>
+            <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="Student Number">
+        </div>
 
-    <div>
-        <button type="button" class="btn btn-primary" onclick="saveStudent()">Save</button>
-        <button type="button" class="btn btn-secondary" onclick="updateStudent()">Update</button>
-        <button type="button" class="btn btn-success" onclick="deleteStudent()">Delete</button>
-    </div>
-    <div class="mt-3">
-        <div class="table-section">
-            <table class="table table-bordered border-primary table-hover">
-                <thead class="table-dark">
-                <tr>
-                    <th scope="col">StdID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">M.Number</th>
-                </tr>
-                </thead>
-                <tbody id="stdTable">
+        <div>
+            <button type="button" class="btn btn-primary" onclick="saveStudent()">Save</button>
+            <button type="button" class="btn btn-secondary" onclick="updateStudent()">Update</button>
+            <button type="button" class="btn btn-success" onclick="deleteStudent()">Delete</button>
+        </div>
+        <div class="mt-3">
+            <div class="table-section">
+                <table class="table table-bordered border-primary table-hover">
+                    <thead class="table-dark">
+                    <tr>
+                        <th scope="col">StdID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">M.Number</th>
+                    </tr>
+                    </thead>
+                    <tbody id="stdTable">
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
 
 
 </body>
